@@ -33,3 +33,10 @@ err = modbus_api_send_request(&req);
 
 ### Recomendación
 Se recomienda usar una tarea productora de solicitudes que tenga una prioridad mayor que la prioridad de la tarea Modbus para optimizar el rendimiento.
+
+```c
+//modbus_api.h
+
+#define MODBUS_TASK_PRIORITY    (tskIDLE_PRIORITY + 1)
+
+```

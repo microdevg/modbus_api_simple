@@ -7,7 +7,6 @@
 
 
 #define QUEUE_MAX_REQS       5
-#define MODBUS_TASK_PRIORITY    (tskIDLE_PRIORITY + 1)
 #define MODBUS_STACK        (4000)
 
 QueueHandle_t _QUEUE_ELEMENTS = 0;

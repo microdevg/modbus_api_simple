@@ -16,6 +16,9 @@
 #include "modbus_params.h"  // for modbus parameters structures
 #include "mbcontroller.h"
 
+#define MODBUS_TASK_PRIORITY    (tskIDLE_PRIORITY + 1)
+
+
 
 typedef void (*modbus_request_callback)(    mb_param_request_t* req,
                                             void* buffer,
